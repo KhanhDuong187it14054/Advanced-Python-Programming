@@ -96,6 +96,89 @@ from exercise import *
 #3a
 print(average(10,20))
 #3b
-def average(num1: float, num2: float) -> float:
+def average(num1: float, num2: float):
     return (num1 + num2)/2
-print(average(10,20))    
+print(average(10,20)) 
+
+
+
+#Chương 7:
+#1a
+print('hello'.upper())
+#1b
+print('Happy Birthday!'.lower())
+#1c
+print('WeeeEEEEeeeEEEEeee'.swapcase())
+#1d
+print('ABC123'.isupper())
+#1e
+print('aeiouAEIOU'.count('a'))
+#1f
+print('hello'.endswith('o'))
+#1g
+print('hello'.startswith('H'))
+#1h
+print('Hello {0}'.format('Python'))
+#1i
+print('Hello {0}! Hello {1}!'.format('Python', 'World'))
+
+#2 number of o’s in 'tomato'
+print("number of o's in tomato: ",'tomato'.count('o'))
+
+#3 index of first 'o' in 'tomato'
+print("index of first o's in tomato: ",'tomato'.find('o'))
+
+#4 index of second 'o' in 'tomato'
+x = 'tomato'.find('o')
+print("index of second o's in tomato: ",'tomato'.find('o',x+1))
+    
+#5 index of second 'o' in 'avocado'
+x = 'avocado'.find('o')
+print("index of second o's in avocado: ",'avocado'.find('o',x+1))
+
+#6 replace 'n' in 'runner' into 'b'
+print('runner ->', 'runner'.replace('n','b'))
+
+#7 strip()
+
+#8a fruit.count() -> fruit.find()
+#8b fruit.upper() -> .swapcase() -> fruit.count()
+#8c frui.swapcase() -> fruit.lower() -> fruit.replace
+
+#9
+season = 'summer'
+print('I love {0}!'.format(season))
+
+#10
+side1 = 3
+side2 = 4
+side3 = 5
+print('The sides have lengths {0}, {1}, and {2}.'.format(side1, side2, side3))
+
+#11a 
+print('boolean'.capitalize())
+#11b 
+print('CO2 H2O'.find('2'))
+#11c 
+print('CO2 H2O'.find('2', 'CO2 H2O'.find('2') + 1))
+#11d
+print('Boolean'[0].islower())
+#11e
+print("MoNDaY".lower().capitalize())
+#11f
+print(" Monday".lstrip())
+
+#12
+def total_occurrences(s1, s2, ch):
+    """ (str, str, str) -> int
+    Precondition: len(ch) == 1
+    Return the total number of times that ch occurs in s1 and s2.
+    >>> total_occurrences('color', 'yellow', 'l')
+    3
+    >>> total_occurrences('red', 'blue', 'l')
+    1
+    >>> total_occurrences('green', 'purple', 'b')
+    0
+    """
+    return s1.count(ch) + s2.count(ch)
+print(total_occurrences('Khanh','Duong','n'))
