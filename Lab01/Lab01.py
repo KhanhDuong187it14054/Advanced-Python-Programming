@@ -66,3 +66,36 @@ print(weeks_elapsed(20,3))
 def square(num):
     return num ** 2
 print(square(4))
+
+
+#Chương 6:
+import math
+
+#1a 
+print(math.floor(-2.8))
+#1b
+print(abs(round(-4.3)))
+#1c
+print(math.ceil(math.sin(34.5)))
+
+#2a 2b
+import calendar
+#2c
+print(help(calendar.isleap))
+#2d
+print(calendar.isleap(2021))
+#2e
+print(dir(calendar))
+#2f
+print(calendar.leapdays(2000, 2050))
+#2g
+print(calendar.weekday(2016, 7, 29))
+
+#3 Import file
+from exercise import *
+#3a
+print(average(10,20))
+#3b
+def average(num1: float, num2: float) -> float:
+    return (num1 + num2)/2
+print(average(10,20))    
