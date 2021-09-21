@@ -1,3 +1,4 @@
+print("----------------------Chuowng3------------------")
 # Chương 3
 # 1a
 a = min(2,3,4)
@@ -68,6 +69,7 @@ def square(num):
 print(square(4))
 
 
+print("-----------------Chương 6----------------------")
 #Chương 6:
 import math
 
@@ -100,8 +102,7 @@ def average(num1: float, num2: float):
     return (num1 + num2)/2
 print(average(10,20)) 
 
-
-
+print("-----------------Chương 7----------------")
 #Chương 7:
 #1a
 print('hello'.upper())
