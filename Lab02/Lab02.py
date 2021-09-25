@@ -65,3 +65,34 @@ print('Reversed List:', ids)
 #4f  Sort the list.
 ids.sort()
 print('Sorted list: ', ids)
+
+
+print("--------/////--------")
+#5a a list contains the atomic numbers of the six alkaline earth metals
+alkaline_earth_metals = [4, 12, 20, 38, 56, 88]
+print('alkaline_earth_metals: ',alkaline_earth_metals)
+#5b index contains radium’s atomic number. 2 ways 
+positive_index = alkaline_earth_metals[5]
+print('index contains radium’s atomic number: ', positive_index)
+negative_index = alkaline_earth_metals[-1]
+print('index contains radium’s atomic number: ', negative_index)
+#5c  how many items there are in alkaline_earth_metals?
+print('length of alkaline_earth_metals: ', len(alkaline_earth_metals))
+#5d the highest atomic number in alkaline_earth_metals
+print('the highest atomic number: ', max(alkaline_earth_metals))
+
+print("--------/////--------")
+#6a a list of temperatures
+temps = [25.2, 16.8, 31.4, 23.9, 28, 22.5, 19.6]
+print('temps: ', temps)
+#6b sort temps in ascending order
+temps.sort()
+print('Sorted temps: ', temps)
+#6c Using slicing
+cool_temps = temps[0:2]
+warm_temps = temps[2:]
+print('cool_temps: ',cool_temps)
+print('warm_temps: ', warm_temps)
+#6d Using list arithmetic
+temps_in_celsius = cool_temps + warm_temps
+print('temps_in_celsius: ', temps_in_celsius)
