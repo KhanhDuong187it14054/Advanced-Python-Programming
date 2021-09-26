@@ -96,3 +96,28 @@ print('warm_temps: ', warm_temps)
 #6d Using list arithmetic
 temps_in_celsius = cool_temps + warm_temps
 print('temps_in_celsius: ', temps_in_celsius)
+
+
+print("--------/////--------")
+#7 Return True if and only if first item of the list is the same as the last
+def same_first_last(L) :
+    return L[0] == L[-1]
+print(same_first_last([3, 4, 2, 8, 3]))
+print(same_first_last(['apple', 'banana', 'pear']))
+print(same_first_last([4.0, 4.5]))
+print(same_first_last(['Duong', 'Binh', 'Cuong', 'Duong']))
+
+print("--------/////--------")
+#8 Return True if and only if the length of L1 is longer than the length of L2
+def is_longer(L1, L2):
+    return len(L1) > len(L2)
+print(is_longer([1, 2, 3], [4, 5]))
+print(is_longer(['abcdef'], ['ab', 'cd', 'ef']))
+print(is_longer(['a', 'b', 'c'], [1, 2, 3]))
+print(is_longer(['Cao Khanh Duong'],['Cao','Khanh','Duong']))
+
+print("--------/////--------")
+#9  values = [0,[0,[0,values,2],2],2]
+values = [0,1,2]
+values[1] = values
+print(values)
