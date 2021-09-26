@@ -121,3 +121,35 @@ print("--------/////--------")
 values = [0,1,2]
 values[1] = values
 print(values)
+
+print("--------/////--------")
+#10 
+units =  [['km', 'miles', 'league'], ['kg', 'pound', 'stone']]
+print(units)
+#10a the first inner list]
+print('the first inner list: ', units[0])
+#10b the last inner list
+print('the last inner list', units[-1])
+#10c The string 'km'
+print('units[0][0]: ', units[0][0])
+#10d The string 'kg'
+print('units[1][0]: ',  units[1][0])
+#10e The list ['miles', 'league']
+print('units[0][1:]: ', units[0][1:])
+#10f The list ['kg', 'pound']
+print('units[1][0:2]: ', units[1][0:2])
+
+print("--------/////--------")
+#11 Repeat the previous exercise using negative indices.
+#11a the first inner list]
+print('the first inner list: ', units[-2])
+#11b the last inner list
+print('the last inner list', units[-1])
+#11c The string 'km'
+print('units[-2][-3]: ', units[-2][-3])
+#11d The string 'kg'
+print('units[-1][-3]: ',  units[-1][-3])
+#11e The list ['miles', 'league']
+print('units[-2][-2:]: ', units[-2][-2:])
+#11f The list ['kg', 'pound']
+print('units[-1][:-1]: ', units[-1][0:-1])
