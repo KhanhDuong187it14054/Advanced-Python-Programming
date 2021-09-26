@@ -291,11 +291,39 @@ num_list = [1, 2, 3, -3, 6, -1, -3, 1]
 remove_neg(num_list)
 print(num_list)
 
-
+print("--------/////--------")
 #13 a right triangle
 for width in range(1, 8):
     print('T' * width)
 
-#14
+print("--------/////--------")
+#14 a right triangle with s hypotenuse on the left side
 for width in range(1, 8):
     print(' '*(7 - width), 'T'* width)
+
+print("--------/////--------")
+#15 Redo the previous two exercises using while loops instead of for loops.
+width1 = 1
+while width1 < 8:
+    print('T' * width1)
+    width1 += 1
+
+width2 = 1
+while width2 < 8:
+    print(' '*(7 - width2), 'T'*width2)
+    width2 += 1
+
+print("--------/////--------")
+#16
+rat_1_weight = [2,1,1,4,5,7,2,3,5,8];
+rat_2_weight = [2,1,1,4,6,6,4,2,2,9];
+#16a how many weeks the weight of the first rat to become 25 percent heavier 
+week = 0
+while rat_1_weight[week] / rat_1_weight[0] - 1 < .25:
+    week += 1
+print(week)
+#16b  how many weeks it would take for rat 1 to be 10 percent heavier than rat 2
+week = 0
+while rat_1_weight[week] / rat_2_weight[week] - 1 < .10:
+    week += 1
+print(week)
