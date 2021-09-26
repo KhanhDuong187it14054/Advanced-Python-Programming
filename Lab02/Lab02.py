@@ -290,3 +290,12 @@ def remove_neg(num_list):
 num_list = [1, 2, 3, -3, 6, -1, -3, 1]
 remove_neg(num_list)
 print(num_list)
+
+
+#13 a right triangle
+for width in range(1, 8):
+    print('T' * width)
+
+#14
+for width in range(1, 8):
+    print(' '*(7 - width), 'T'* width)
