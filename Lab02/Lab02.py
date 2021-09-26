@@ -153,3 +153,26 @@ print('units[-1][-3]: ',  units[-1][-3])
 print('units[-2][-2:]: ', units[-2][-2:])
 #11f The list ['kg', 'pound']
 print('units[-1][:-1]: ', units[-1][0:-1])
+
+print("--------/////--------")
+#Chuong9
+#1 for loop to print all the values
+celegans_phenotypes =  ['Emb','Him', 'Unc', 'Lon', 'Dpy', 'Sma']
+print(celegans_phenotypes)
+for phenotype in celegans_phenotypes:
+    print(phenotype)
+
+print("--------/////--------")
+#2 print all on a single line
+half_lives = [87.74, 24110.0, 6537.0, 14.4, 376000.0]
+for value in half_lives:
+    print(value, end=' ')
+
+print("--------/////--------")
+#3 add values + 1  of whales to more_whales
+whales = [5, 4, 7, 3, 2, 3, 2, 6, 4, 2, 1, 7, 1, 3]
+print('whales: ', whales)
+more_whales = []
+for count in whales:
+    more_whales.append(count + 1)
+print('more_whales: ', more_whales)
