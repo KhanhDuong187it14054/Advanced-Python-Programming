@@ -212,3 +212,21 @@ def mystery_function(values):
             # Lan 2. result[-1] = [4]
     return result
 print( mystery_function([[1, 2, 3], [4, 5, 6]]))
+
+
+print("--------/////--------")
+#6 type quit (any capitalization) to exit
+text = ""
+while text.lower() != "quit":
+    text = input("Please type quit (any capitalization) to exit: ")
+    if text.lower() == "quit":
+        print("Exited program")
+
+
+print("--------/////--------")
+#7 add the population of the current country to total
+country_populations = [1295, 23, 7, 3, 47, 21]
+total = 0
+for population in country_populations:
+    total += population
+print('total population = ', total)
