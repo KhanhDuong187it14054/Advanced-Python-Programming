@@ -277,3 +277,16 @@ average = sum / count
 print('sum = ', sum)
 print('count = ', count)
 print('average = ', average)
+
+print("--------/////--------")
+#12 Rewrite the code 
+def remove_neg(num_list):
+    index = 0
+    while index < len(num_list):
+        if num_list[index] < 0:
+            num_list.remove(num_list[index])
+        else:
+            index += 1
+num_list = [1, 2, 3, -3, 6, -1, -3, 1]
+remove_neg(num_list)
+print(num_list)
