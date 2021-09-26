@@ -176,3 +176,39 @@ more_whales = []
 for count in whales:
     more_whales.append(count + 1)
 print('more_whales: ', more_whales)
+
+print("--------/////--------")
+#4a Create a nested list 
+alkaline_earth_metals = [[4, 9.012], [12, 24.305],
+[20, 40.078], [38, 87.62],[56, 137.327], [88, 226]]
+print(alkaline_earth_metals)
+#4b for loop to print all the values
+for element in alkaline_earth_metals:
+    print('atomic number: ', element[0])
+    print('atomic weight: ', element[1])
+    print('')
+#4c  not nested
+number_and_weight = []
+for element in alkaline_earth_metals:
+    number_and_weight.append(element[0])
+    number_and_weight.append(element[1])
+print('number_and_weight: ', number_and_weight)
+
+print("--------/////--------")
+#5  add  a docstring, type annotations, or comments
+def mystery_function(values):
+    """ Trả về một bản sao có các danh sách con.
+    Phần từ trong danh sách con được đảo ngược
+    >>> mystery_function([[1,2,3], [4,5,6]])
+    [[3,2,1],[4,5,6]
+     """
+    result = []
+    for sublist in values:
+        result.append([sublist[0]]) # result = [[1]] 
+        for i in sublist[1:]: # lan 1: i = 2,3  / lan 2: i = 5,6  
+            result[-1].insert(0, i) 
+            # them i vao truoc.
+            # Lan 1. result[-1] = [1]
+            # Lan 2. result[-1] = [4]
+    return result
+print( mystery_function([[1, 2, 3], [4, 5, 6]]))
