@@ -230,3 +230,50 @@ total = 0
 for population in country_populations:
     total += population
 print('total population = ', total)
+
+
+print("--------/////--------")
+#8
+rat_1 = [2,1,3,4,7,6,2,3,5,8]
+rat_2 = [1,3,2,2,6,8,4,2,2,9]
+#8a
+if rat_1[0] > rat_2[0]:
+    print("Rat 1 weighed more than rat 2 on day 1.")
+else:
+    print("Rat 1 weighed less than rat 2 on day 1.")
+#8b
+if rat_1[0] > rat_2[0] and rat_1[-1] > rat_2[-1]:
+    print("Rat 1 remained heavier than Rat 2.")
+else:
+    print("Rat 2 became heavier than Rat 1.")
+#8c
+if rat_1[0] > rat_2[0]:
+    if rat_1[-1] > rat_2[-1]:
+        print("Rat 1 remained heavier than Rat 2.")
+    else:
+        print("Rat 2 became heavier than Rat 1.")
+else:
+    print("Rat 1 weighed less than rat 2 on day 1.")
+
+print("--------/////--------")
+#9  Print the numbers in the range 33 to 49 (inclusive)
+for number in range(33, 50):
+    print(number)
+
+print("--------/////--------")
+#10 Print the numbers from 1 to 10 (inclusive) in descending order, all on one line.
+for number in range(10):
+    print(10 - number, end=' ')
+print('')
+
+print("--------/////--------")
+#11
+sum = 0
+count = 0
+for number in range(2,23):
+    sum += number
+    count += 1
+average = sum / count
+print('sum = ', sum)
+print('count = ', count)
+print('average = ', average)
