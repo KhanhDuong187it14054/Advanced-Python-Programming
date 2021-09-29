@@ -1,3 +1,7 @@
-### ---Cao Khanh Duong--- ###
-187IT14054
-K24T-IT3
+Thong tin sinh vien
+# Cao Khanh Duong - 187IT14054
+# Bang diem:
+10
+-
+9
+8
