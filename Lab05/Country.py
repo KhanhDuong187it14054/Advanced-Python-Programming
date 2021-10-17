@@ -18,3 +18,4 @@ class Country:
 
     def __repr__(self):
         return "Country('{0}', {1}, {2})".format(self.name, self.population, self.area)
+
